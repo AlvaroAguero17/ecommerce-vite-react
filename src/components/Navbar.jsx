@@ -41,17 +41,33 @@ export const Navbar = () => {
               </a>
             </li>
           </ul>
-          <form className="d-flex" role="search">
+          <form className="d-flex mt-1" role="search">
             <input
-              className="form-control me-2"
+              className="form-control me-2 "
               type="search"
               placeholder="Search..."
               aria-label="Search"
             />
-            <button className="btn btn-outline-light" type="submit">
+            <button className="btn btn-light me-4 " type="submit">
               <i className="bi bi-search"></i>
             </button>
           </form>
+
+          <div className="text-center mt-1">
+            <button className="btn btn-outline-light me-1 " type="button">
+              <i className="bi bi-person-circle"></i>
+            </button>
+            <button
+              type="button"
+              className="btn btn-outline-light position-relative me-1 "
+            >
+              <i className="bi bi-basket2-fill"></i>
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                10
+                <span className="visually-hidden">cart products</span>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
